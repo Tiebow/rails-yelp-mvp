@@ -8,9 +8,9 @@
   <div>
     <h3>Reviews</h3>
     <ul>
-      <li class="mb-2"><% @reviews.each do |review| %>
+      <% @reviews.each do |review| %>
           <li><%= review.content %> <%= review.rating %>/5</li>
-        <% end %></li>
+        <% end %>
     </ul>
   </div>
   <div>
